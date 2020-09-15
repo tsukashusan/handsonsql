@@ -6,7 +6,7 @@ SQL Serverを作る前の準備です。
 
 [Azure Data Studio のダウンロードとインストール][1]
 
-![Azure Data Studio ]([3] "Azure Data Studio インストール")
+![Azure Data Studio ](images/azure-datastudio.png "Azure Data Studio インストール")
 
 [ダウンロード][2]
 
@@ -21,10 +21,8 @@ SQL Serverを作る前の準備です。
 
 ### SQL on IaaSの展開
 
-![リソースの作成]([4] "サンプル")
+![リソースの作成](images/resource-create.png "サンプル")
 
 
 [1]:https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
 [2]:https://go.microsoft.com/fwlink/?linkid=2138608
-[3]:./images/azure-datastudio.png
-[4]:./images/resource-create.png
