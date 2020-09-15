@@ -53,7 +53,6 @@ SQL Serverを作る前の準備です。
 |  ユーザ名 |  saadmin  |
 |  パスワード |  o9UiUlfzqRHc  |
 |  パブリック受信ポート |  なし  |
-|  パスワード |  o9UiUlfzqRHc  |
 |Windows Server ライセンスを既にお持ちの場合| いいえ |
 
 
