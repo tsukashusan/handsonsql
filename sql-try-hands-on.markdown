@@ -83,6 +83,9 @@ GO
 - データベース作成 結果の確認
 ![DataStudio データベース作成結果](images/datastudio-create-database.png "DataStudio データベース作成結果")
 
+- テーブルの作成
+![DataStudio データベース作成結果](images/datastudio-table-prev.png "DataStudio データベース作成結果")
+
 ## [前の演習へ][1]
 
 [1]:sqlcreate-hands-on.markdown
