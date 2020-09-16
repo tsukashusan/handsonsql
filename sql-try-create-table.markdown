@@ -23,7 +23,10 @@ SQL Server(RDBMS)はテーブル構造あったの価値ですので、早速テ
 - [Yes]を選択
 ![ファイル拡張子yes](images/explorer-file-extension-rename-dlg.png "ファイル拡張子yes")
 
-- ファイルがダウンロードできたら、Data Studioでファイルを開きます
+- ファイルがダウンロードできたら、Data Studioでファイルを開きます。Database 販売管理が選択されていることを確認して、[ファイル]をクリック
+![SQLファイルオープン準備](images/datastudio-file-open-prev.png "SQLファイルオープン準備")
+
+- [ファイルを開く]をクリック
 ![SQLファイルオープン](images/datastudio-file-open.png "SQLファイルオープン")
 
 - ファイルオープンで```NorthWindJSQLDB-DDL-INSERT.sql```を開きます
@@ -46,6 +49,15 @@ SQL Server(RDBMS)はテーブル構造あったの価値ですので、早速テ
 
 - オープンしたファイルを実行します。Databaseが[販売管理]と選択されていること確認し、[▷Run]を実行
 ![SQL実行](images/datastudio-sql-execute.png "SQL実行")
+
+## 実行結果
+
+- 実行中になると、[Executing Query...]と[00:00:03]の実行時間が表示される
+![SQL実行中](images/datastudio-sql-execute-progress.png "SQL実行中")
+
+- 完了すると実行中時間が止まり(今回は[00:00:07]で停止)、[Executing Query...]は表示されなくなる
+![SQL完了](images/datastudio-sql-execute-complete.png "SQL完了")
+
 
 
 
