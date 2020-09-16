@@ -6,11 +6,22 @@ SQL Serverを作る前の準備です。
 
 前回の演習で作成した仮想マシンにAzure Bastion でログイン
 
+#### 仮想マシンにインストールするために、IE11のセキュリティを一旦外す
+
+![IE11](images/winserver-ie11-0.png "IEセッティング")
+
+**Administrators**のみ**off**
+
+![IE11](images/winserver-ie11.png "IEセッティング")
+
+
 [Azure Data Studio のダウンロードとインストール][1]
 
 ![Azure Data Studio ](images/azure-datastudio.png "Azure Data Studio インストール")
 
 [Data Studio の ダウンロード][2]
+
+![Azure Data Studio Bastion](images/datastudio-install-4-bastion.png "Azure Data Studio インストール")
 
 
 ## 構築
@@ -130,9 +141,10 @@ SQL Serverを作る前の準備です。
 **【作成】**をクリック
 ![確認および作成](images/vmcreate-confirm.png "vmconfirm")
 
+## [次の演習へ][3]
 
 [1]:https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
 [2]:https://go.microsoft.com/fwlink/?linkid=2138608
-
+[3]:sql-try-hands-on.markdown
 
 
