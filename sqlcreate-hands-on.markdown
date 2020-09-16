@@ -6,22 +6,26 @@ SQL Serverを作る前の準備です。
 
 前回の演習で作成した仮想マシンにAzure Bastion でログイン
 
-#### 仮想マシンにインストールするために、IE11のセキュリティを一旦外す
+- 仮想マシンにインストールするために、IE11のセキュリティを一旦外す
 
-![IE11](images/winserver-ie11-0.png "IEセッティング")
+![IE11](images/winserver-ie11-0.png "Prev IEセッティング")
 
-**Administrators**のみ**off**
+-  **Administrators**のみ**off**
 
 ![IE11](images/winserver-ie11.png "IEセッティング")
 
 
-[Azure Data Studio のダウンロードとインストール][1]
+- [Azure Data Studio のダウンロードとインストール][1]
 
 ![Azure Data Studio ](images/azure-datastudio.png "Azure Data Studio インストール")
 
-[Data Studio の ダウンロード][2]
+- [Data Studio の ダウンロード][2]
 
-![Azure Data Studio Bastion](images/datastudio-install-4-bastion.png "Azure Data Studio インストール")
+![Azure Data Studio Bastion](images/datastudio-install-4-bastion.png "Azure Data Studio Bastion View")
+
+- こちらのワーニングは気にせず**OK**で進めましょう
+
+![Azure Data Studio Warning](images/datastudio-install-warning.png "Azure Data Studio 警告")
 
 
 ## 構築
@@ -38,20 +42,20 @@ SQL Serverを作る前の準備です。
 
 ![リソースの作成](images/resource-create.png "リソースの作成")
 
-**SQL Server** と入力し、**Enter**を押下
+- **SQL Server** と入力し、**Enter**を押下
 
 ![SQL Server](images/sql-server-input.png "SQL Server")
 
 
-公開元を**Microsoft**とし、**SQL Server 2019 on Windows Server 2019**を選択する
+- 公開元を**Microsoft**とし、**SQL Server 2019 on Windows Server 2019**を選択する
 
 ![公開とSQL Serverの選択](images/pub-microsoft-win2019.png "sqlpub")
 
-**Free SQL Server License: SQL 2019 Developer on Windows Server 2019**を選択
+- **Free SQL Server License: SQL 2019 Developer on Windows Server 2019**を選択
 
 ![SQL Server 2019の選択](images/sql-server-choise.png "sqlpub")
 
-仮想マシンのウィザードになります
+- 仮想マシンのウィザードになります
 
 |  項目|  値  |
 | ---- | ---- |
@@ -70,14 +74,14 @@ SQL Serverを作る前の準備です。
 
 
 
-![SQL Server 2019の選択](images/create-vm.png "vmcreate")
+- ![SQL Server 2019の選択](images/create-vm.png "vmcreate")
 
 **【次:ディスク>】** をクリック
 
-#### **【ディスク】** 全て規定 **【次:ネットワーク>】**
+- #### **【ディスク】** 全て規定 **【次:ネットワーク>】**
 ![ディスク](images/vmcreate-disk.png "vmdisk")
 
-**【ネットワーク】**
+- **【ネットワーク】**
 
 |  項目|  値  |
 | ---- | ---- |
@@ -96,7 +100,7 @@ SQL Serverを作る前の準備です。
 
 **【次:管理>】** へ
 
-#### **【管理】**
+- #### **【管理】**
 
 |  項目|  値  |
 | ---- | ---- |
@@ -134,7 +138,7 @@ SQL Serverを作る前の準備です。
 ![SQL Server の設定](images/vmcreate-sql.png "vmsql")
 **【次:タグ>】** へ
 
-#### **【タグ】** 全て規定 **【次:確認および作成>】 **
+- #### **【タグ】** 全て規定 **【次:確認および作成>】 **
 **【確認および作成】 **
 
 [検証に成功しました]と表示されていることを確認し、
