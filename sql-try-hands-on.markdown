@@ -91,4 +91,4 @@ GO
 [1]:sqlcreate-hands-on.markdown
 [2]:https://docs.microsoft.com/ja-jp/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15
 [3]:https://memo.itsysgroup.com/?p=1169
-[4]:sql-try-create-table
+[4]:sql-try-create-table.markdown
