@@ -83,11 +83,12 @@ GO
 - データベース作成 結果の確認
 ![DataStudio データベース作成結果](images/datastudio-create-database.png "DataStudio データベース作成結果")
 
-- テーブルの作成
-![DataStudio データベース作成結果](images/datastudio-table-prev.png "DataStudio データベース作成結果")
 
+## [次の演習へ][4]
 ## [前の演習へ][1]
+
 
 [1]:sqlcreate-hands-on.markdown
 [2]:https://docs.microsoft.com/ja-jp/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15
 [3]:https://memo.itsysgroup.com/?p=1169
+[4]:sql-try-create-table
