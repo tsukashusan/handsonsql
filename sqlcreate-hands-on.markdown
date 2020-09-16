@@ -1,4 +1,4 @@
-#　SQL Server 作成
+# SQL Server 作成
 
 ## 準備
 SQL Serverを作る前の準備です。
