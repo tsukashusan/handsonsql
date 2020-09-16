@@ -22,7 +22,11 @@
 - Bastion
 - ネットワークセキュリティグループ
 
+## [本編へ][5]
+
+
 [1]:https://docs.microsoft.com/en-us/azure/architecture/icons/
 [2]:https://chrome.google.com/webstore/detail/amazing-icon-downloader/kllljifcjfleikiipbkdcgllbllahaob
 [3]:https://github.com/microsoft/PowerToys
 [4]:https://miscstrage.blob.core.windows.net/hands-on/architecture-diagram.pptx?sv=2019-10-10&st=2020-09-16T14%3A16%3A47Z&se=2030-09-16T14%3A59%3A00Z&sr=b&sp=r&sig=g1kmCxg1ECuA6IVq17noJF1cxJPtVOl8IggP5vpc9H4%3D
+[5]:sqlcreate-hands-on.markdown
