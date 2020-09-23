@@ -57,7 +57,7 @@ DataStudio でログインできたことをが確認できる
 ログイン結果
 ![DataStudio Complete Login](images/datastudio-connection-reconnect-hanbaikanri-result.png "DataStudio Complete Login")
 
-## [前の演習へ][1]]
+## [前の演習へ][1]
 ## [最初に戻る][2]
 
 [1]:sqldatabase-create.markdown
