@@ -73,8 +73,7 @@ SQL Serverを作る前の準備です。
 |Windows Server ライセンスを既にお持ちの場合|いいえ|
 
 
-
-- ![SQL Server 2019の選択](images/create-vm.png "vmcreate")
+![SQL Server 2019の選択](images/create-vm.png "vmcreate")
 
 **【次:ディスク>】** をクリック
 
