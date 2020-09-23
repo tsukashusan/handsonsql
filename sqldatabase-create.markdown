@@ -78,5 +78,12 @@
 しばらく待ちます
 ![SQL Database waitting](images/sqldatabase-waitting.png "SQL Database waitting")
 
-完了しました
+### 完了
 ![SQL Database complete](images/sqldatabase-complete.png "SQL Database complete")
+
+## [次の演習へ][4]
+## [前の演習へ][1]
+
+
+[1]:sqldatabase-login.markdown
+[4]:sql-try-create-table.markdown
