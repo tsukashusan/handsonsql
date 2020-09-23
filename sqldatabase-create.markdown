@@ -81,9 +81,9 @@
 ### 完了
 ![SQL Database complete](images/sqldatabase-complete.png "SQL Database complete")
 
-## [次の演習へ][4]
-## [前の演習へ][1]
+## [次の演習へ][1]
+## [前の演習へ][2]
 
 
 [1]:sqldatabase-login.markdown
-[4]:sql-try-create-table.markdown
+[2]:sql-try-create-table.markdown

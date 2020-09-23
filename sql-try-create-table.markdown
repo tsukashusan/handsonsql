@@ -72,9 +72,8 @@ SQL Server(RDBMS)はテーブル構造あったの価値ですので、早速テ
 
 ### 他のテーブルの結果も確認してみよう
 
-## [次の演習へ][2]
-## [前の演習へ][3]
+## [次の演習へ]1]
+## [前の演習へ][2]
 
-[1]:https://miscstrage.blob.core.windows.net/hands-on/sql/NorthWindJSQLDB-DDL-INSERT.sql?sv=2019-10-10&st=2020-09-15T15%3A00%3A00Z&se=2021-09-16T15%3A00%3A00Z&sr=b&sp=r&sig=nfK4lzrsscm7QuYTvPHzNbqsMl5b%2F0G57TvDWut%2FWJg%3D
-[2]:sql-try-hands-on.markdown
-[3]:sqlcreate-hands-on.markdown
+[1]:sqldatabase-create.markdown
+[2]:sqlcreate-hands-on.markdown

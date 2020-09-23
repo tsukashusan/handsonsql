@@ -1,4 +1,4 @@
-# SQL Database へデータを投入してみよう
+# SQL Database への接続設定(ファイアウォール)
 
 ## Data Studioで SQL Database (販売管理)へログインする
 - SQL Database (販売管理) へアクセスするためのFQDNをクリップボードへコピーする
@@ -56,3 +56,9 @@ DataStudio でログインできたことをが確認できる
 
 ログイン結果
 ![DataStudio Complete Login](images/datastudio-connection-reconnect-hanbaikanri-result.png "DataStudio Complete Login")
+
+## [前の演習へ][1]]
+## [最初に戻る][2]
+
+[1]:sqldatabase-create.markdown
+[2]:sqlcreate-hands-on.markdown
