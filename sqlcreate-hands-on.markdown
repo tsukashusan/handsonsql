@@ -146,9 +146,11 @@ SQL Serverを作る前の準備です。
 ![確認および作成](images/vmcreate-confirm.png "vmconfirm")
 
 ## [次の演習へ][3]
+## [【演習を始めるまえに】に戻る][4]
 
 [1]:https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15
 [2]:https://go.microsoft.com/fwlink/?linkid=2138608
 [3]:sql-try-hands-on.markdown
+[4]:startup.markdown
 
 
