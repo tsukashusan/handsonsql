@@ -12,6 +12,7 @@
 
 - **パラメータを入力**を選択
 ![DataStudio パラメータ](images/sqldatabase-create-sqlserver.png "DataStudio パラメータ")
+
 |項目|値|
 |----|----|
 |サブスクリプション|サブスクリプションを選択|
@@ -19,8 +20,11 @@
 |データベース名|販売管理|
 |サーバー|新規作成|
 
+
 - **SQL Database**を作成
 ![DataStudio パラメータ](images/sqldatabase-create-database.png "DataStudio パラメータ")
+
+
 |項目|値|
 |----|----|
 |サーバー名|任意(インターネットで一意)|
