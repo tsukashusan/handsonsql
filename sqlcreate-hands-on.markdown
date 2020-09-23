@@ -40,7 +40,7 @@ SQL Serverを作る前の準備です。
 
 ### SQL on IaaSの展開
 
-![リソースの作成](images/resource-create.png "リソースの作成")
+![リソースの作成](images/resource-create-sql.png "リソースの作成")
 
 - **SQL Server** と入力し、**Enter**を押下
 

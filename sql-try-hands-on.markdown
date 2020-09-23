@@ -17,17 +17,17 @@
 -  **各種パラメータを入力**をクリック
 ![DataStudio パラメータ](images/datastudio-connection-param-input.png "DataStudio パラメータ")
 
-    | 項目 | 値 |
-    | ---- | ---- |
-    | Server  |  SQL on IaaSのipアドレス  |
-    | Authentication type |  SQL Login  |
-    | User name | 仮想マシンで設定した値 |
-    | Password |  仮想マシンで設定した値 |
-    | Database | <既定>  |
-    | サーバーグループ  |  <既定>   |
-    | Name(optional) |  SQL on IaaS  |
-    | 自動バックアップ| 有効化 |
-    | SQL Server Machine Learning Services (データベース内)|無効化|
+|項目|値|
+|----|----|
+|Server|SQL on IaaSのipアドレス|
+|Authentication type|SQL Login|
+|User name|仮想マシンで設定した値|
+|Password|仮想マシンで設定した値|
+|Database|<既定>|
+|サーバーグループ|<既定>|
+|Name(optional)|SQL on IaaS|
+|自動バックアップ|有効化|
+|SQL Server Machine Learning Services (データベース内)|無効化|
 
 
 - 接続できたことを確認
