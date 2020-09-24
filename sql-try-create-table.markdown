@@ -4,9 +4,9 @@
 - ```販売管理```の```>```をクリックすると```Tables```の下に何もないことが確認できます
 ![DataStudio table view](images/datastudio-table-prev.png "DataStudio table view")
 
-SQL Server(RDBMS)はテーブル構造あったの価値ですので、早速テーブルを作ってみましょう。
+SQL Server(RDBMS)はテーブル構造があって初めて価値があります。早速テーブルを作ってみましょう。
 以下のファイルをダウンロードし、DataStudio で開きましょう
-[テーブル作成 SQL][1]
+[テーブル作成 SQL][3]
 
 - 文字化けが発生しますので、エンコーディング```Auto-Select```を選択し、```Japanese(Shift-JIS)```が選択されていることを確認
 ![SQLダウンロード](images/sql-download.png "SQLダウンロード")
@@ -77,3 +77,4 @@ SQL Server(RDBMS)はテーブル構造あったの価値ですので、早速テ
 
 [1]:sqldatabase-create.markdown
 [2]:sqlcreate-hands-on.markdown
+[3]:https://miscstrage.blob.core.windows.net/hands-on/sql/NorthWindJSQLDB-DDL-INSERT.sql?sv=2019-10-10&st=2020-09-24T03%3A00%3A00Z&se=2021-09-24T03%3A00%3A00Z&sr=b&sp=r&sig=opCB78M9y6xHcRKpv4VGfhHv2Ul36TrW0pCTTNTDhk0%3D
