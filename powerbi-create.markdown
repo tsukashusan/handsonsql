@@ -87,8 +87,6 @@
 |新しい列名|小計|
 |カスタム列の式|```=[単価]*[数量]-[割引]```|
 
-
-
 - 小計列完成
 ![powerbi detasource custom result](images/powerbi-datasource-custom-col-result.png "powerbi detasource custom columun result")
 
