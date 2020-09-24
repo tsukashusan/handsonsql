@@ -5,7 +5,7 @@
 ![DataStudio table view](images/datastudio-table-prev.png "DataStudio table view")
 
 SQL Server(RDBMS)はテーブル構造があって初めて価値があります。早速テーブルを作ってみましょう。
-以下のファイルをダウンロードし、DataStudio で開きましょう
+以下のファイルをダウンロードし、DataStudio で開きましょう<p/>
 [テーブル作成 SQL][3]
 
 - 文字化けが発生しますので、エンコーディング```Auto-Select```を選択し、```Japanese(Shift-JIS)```が選択されていることを確認
