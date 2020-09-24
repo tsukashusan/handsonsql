@@ -41,7 +41,7 @@
 - PowerBi 【次へ】
 ![powerbi place](images/powerbi-install-place.png "powerbi place")
 
-- PowerBi 【次へ】
+- PowerBi 【インストール】
 ![powerbi install](images/powerbi-install-do.png "powerbi install")
 
 - 少し待ちます
@@ -96,5 +96,10 @@
 - 適用します
 ![powerbi detasource apply](images/powerbi-datasource-apply.png "powerbi detasource custom apply")
 
+## [前の演習へ][2]
+## [はじめに戻る][3]
 
 [1]:https://powerbi.microsoft.com/ja-jp/downloads/
+
+[2]:sqldatabase-login.markdown
+[3]:sqlcreate-hands-on.markdown
