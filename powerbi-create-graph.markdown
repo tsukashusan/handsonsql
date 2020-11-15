@@ -22,5 +22,5 @@
 
 [1]:https://powerbi.microsoft.com/ja-jp/downloads/
 
-[2]:sqldatabase-login.markdown
+[2]:powerbi-create.markdown
 [3]:sqlcreate-hands-on.markdown
