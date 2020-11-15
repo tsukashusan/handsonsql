@@ -52,8 +52,23 @@
 - [発行]をクリックします。
 !["powerbi publish"](images/powerbi-publish.png "powerbi publish")
 
-- [発行]をクリックします。
-!["powerbi publishinput id"](images/powerbi-publish-input-id.png "powerbi publish input id")
+- PowerBIのアカウント情報を入力します。
+!["powerbi publish input id"](images/powerbi-publish-input-id.png "powerbi publish input id")
+
+- PowerBIの発行先をPowerBIと選択します。
+!["powerbi publishi choice powerbi"](images/powerbi-publish-choice-powerbi.png "powerbi publish choice powerbi")
+
+- PowerBIのアカウント情報でサインインします。
+!["powerbi publishi signin"](images/powerbi-publish-signin.png "powerbi publish signin")
+
+- PowerBIのワークスペースを選択します。この例では[マイワークスペース]としています。
+!["powerbi publishi signin"](images/powerbi-publish-workspace-choice.png "powerbi publish signin")
+
+- 発行中になります。
+!["powerbi publishi signin"](images/powerbi-publish-progress.png "powerbi publish signin")
+
+- 完了すると図の画面になり、Webのリンクが表示されるので、リンクをクリックします。
+!["powerbi publishi signin"](images/powerbi-publish-complete.png "powerbi publish signin")
 
 
 ## [前の演習へ][2]
