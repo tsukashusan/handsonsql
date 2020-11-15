@@ -93,13 +93,19 @@
 - 小計列の型を通貨型(固定小数点)にします
 ![powerbi detasource custom type shokei](images/powerbi-datasource-convert-type-shokei.png "powerbi detasource custom type shokei")
 
-- 適用します
+- [閉じて定期]をクリック
 ![powerbi detasource apply](images/powerbi-datasource-apply.png "powerbi detasource custom apply")
 
+- 取り込み中になります。
+![powerbi datasource import progress](images/powerbi-datasource-import-progress.png "powerbi datasource import progress")
+
+
+- 取り込み中が完了しました。
+![powerbi datasource import complete](images/powerbi-datasource-import-complete.png "powerbi datasource import complete")
+
+
+## [次の演習へ][1]
 ## [前の演習へ][2]
-## [はじめに戻る][3]
-
-[1]:https://powerbi.microsoft.com/ja-jp/downloads/
-
+[1]:powerbi-create-graph.markdown
 [2]:sqldatabase-login.markdown
 [3]:sqlcreate-hands-on.markdown
