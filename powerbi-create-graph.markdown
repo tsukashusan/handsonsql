@@ -62,13 +62,16 @@
 !["powerbi publishi signin"](images/powerbi-publish-signin.png "powerbi publish signin")
 
 - PowerBIのワークスペースを選択します。この例では[マイワークスペース]としています。
-!["powerbi publishi signin"](images/powerbi-publish-workspace-choice.png "powerbi publish signin")
+!["powerbi publish workspace choice"](images/powerbi-publish-workspace-choice.png "powerbi workspace choice")
 
 - 発行中になります。
-!["powerbi publishi signin"](images/powerbi-publish-progress.png "powerbi publish signin")
+!["powerbi publishi progress"](images/powerbi-publish-progress.png "powerbi publish progress")
 
 - 完了すると図の画面になり、Webのリンクが表示されるので、リンクをクリックします。
-!["powerbi publishi signin"](images/powerbi-publish-complete.png "powerbi publish signin")
+!["powerbi publishi complete"](images/powerbi-publish-complete.png "powerbi publish complete")
+
+- PowerBI Pro(Web)の画面が表示れ、作成したダッシュボードが表示されていることが確認できます。
+!["powerbi web view"](images/powerbi-web-view.png "powerbi web view")
 
 
 ## [前の演習へ][2]
