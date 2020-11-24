@@ -10,19 +10,19 @@ spark.conf.set(
 
 # COMMAND ----------
 
-dbutils.fs.ls("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/sample")
+dbutils.fs.ls("abfss://<container name>@<storage account name>.dfs.core.windows.net/sample")
 
 # COMMAND ----------
 
-shiresaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/仕入先/")
-zyuchu = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/受注/")
-zyuchumeisai = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/受注明細/")
-shohin = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/商品/")
-shohinkubun = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/商品区分/")
-tokuisaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/得意先/")
-shain = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/社員/")
-unso = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/運送会社/")
-todofuken = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<cotanier name>@<storage account name>.dfs.core.windows.net/<folder path>/都道府県/")
+shiresaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/仕入先/")
+zyuchu = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/受注/")
+zyuchumeisai = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/受注明細/")
+shohin = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/商品/")
+shohinkubun = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/商品区分/")
+tokuisaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/得意先/")
+shain = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/社員/")
+unso = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/運送会社/")
+todofuken = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/都道府県/")
 
 # COMMAND ----------
 
