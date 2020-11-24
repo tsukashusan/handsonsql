@@ -93,6 +93,11 @@ variable "storageaccountname" {
   default = "<prefix>synapse"
 }
 
+variable "storagecontainer" {
+  type    = string
+  default = "synapse"
+}
+
 variable "databricksname" {
   type    = string
   default = "<prefix>databricks"
