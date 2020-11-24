@@ -39,7 +39,7 @@ CREATE EXTERNAL TABLE [ext_shiresaki] (
 	[ファクシミリ] [nvarchar](24) NULL,
 	[ホームページ] [nvarchar](4000) NULL
 )
-WITH (LOCATION='/shiiresaki',
+WITH (LOCATION='/orc/shiiresaki',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -51,7 +51,7 @@ CREATE EXTERNAL TABLE [ext_unso] (
 	[運送会社] [nvarchar](40) NOT NULL,
 	[電話番号] [nvarchar](24) NULL
 )
-WITH (LOCATION='/unso',
+WITH (LOCATION='/orc/unso',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -75,7 +75,7 @@ CREATE EXTERNAL TABLE [ext_shain] (
 	[写真] [nvarchar](255) NULL,
 	[プロフィール] [nvarchar](4000) NULL
 )
-WITH (LOCATION='/shain',
+WITH (LOCATION='/orc/shain',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -95,7 +95,7 @@ CREATE EXTERNAL TABLE [ext_shohin] (
 	[発注点] [nvarchar](20) NULL,
 	[生産中止] [nvarchar](1) NOT NULL
 )
-WITH (LOCATION='/shohin',
+WITH (LOCATION='/orc/shohin',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -108,7 +108,7 @@ CREATE EXTERNAL TABLE [ext_shohinkubun] (
 	[説明] [nvarchar](4000) NULL,
 	[図] [nvarchar](4000) NULL
 )
-WITH (LOCATION='/shohinkubun',
+WITH (LOCATION='/orc/shohinkubun',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -122,7 +122,7 @@ CREATE EXTERNAL TABLE [ext_todofuken] (
 	[地域名ローマ字] [nvarchar](200) NULL,
 	[地域] [nvarchar](10) NULL
 )
-WITH (LOCATION='/todofuken',
+WITH (LOCATION='/orc/todofuken',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -143,7 +143,7 @@ CREATE EXTERNAL TABLE [ext_tokuisaki] (
 	[電話番号] [nvarchar](24) NULL,
 	[ファクシミリ] [nvarchar](24) NULL
 )
-WITH (LOCATION='/tokuisaki',
+WITH (LOCATION='/orc/tokuisaki',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -165,7 +165,7 @@ CREATE EXTERNAL TABLE [ext_zyuchu] (
 	[出荷日] [nvarchar](100) NULL,
 	[運送料] [nvarchar](100) NULL
 )
-WITH (LOCATION='/zyuchu',
+WITH (LOCATION='/orc/zyuchu',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )
@@ -179,7 +179,7 @@ CREATE EXTERNAL TABLE [ext_zyuchumeisai] (
 	[数量] [nvarchar](100) NOT NULL,
 	[割引] [nvarchar](100) NOT NULL
 )
-WITH (LOCATION='/zyuchumeisai',
+WITH (LOCATION='/orc/zyuchumeisai',
         DATA_SOURCE = AzureStorage,
         FILE_FORMAT = ORC
 )

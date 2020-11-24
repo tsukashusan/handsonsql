@@ -43,6 +43,12 @@ resource "azurerm_storage_account" "example" {
   }
 }
 
+resource "azurerm_storage_container" "example" {
+  name                  = var.storagecontainer
+  storage_account_name  = azurerm_storage_account.example.name
+  container_access_type = "private"
+}
+
 resource "azurerm_sql_database" "example" {
   name                             = "販売管理"
   resource_group_name              = azurerm_resource_group.example.name
