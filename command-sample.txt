@@ -1,5 +1,8 @@
 以下、AzureStudy 第6回で使うコマンド一覧です。
 
+[任意のアルファベット]
+<こちらへ貼り付けてください>
+
 [コマンドプロンプトを立ち上げる]
 cd Downloads
 mkdir terraformsyna
@@ -15,6 +18,8 @@ curl -k -o variable.tf "https://miscstrage.blob.core.windows.net/hands-on/variab
 
 
 [アップロードしたファイルの移動]
+mkdir -p terraform/synapse-dbricks
+cd terraform/synapse-dbricks
 cp ~/*.tf .
 ls
 
