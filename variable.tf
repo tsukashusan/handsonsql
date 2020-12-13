@@ -98,7 +98,27 @@ variable "storagecontainer" {
   default = "synapse"
 }
 
+variable "csvstoragecontainer" {
+  type    = string
+  default = "sample"
+}
+
 variable "databricksname" {
   type    = string
   default = "<prefix>databricks"
+}
+
+variable "key_vaultname" {
+  type    = string
+  default = "<prefix>keyvault"
+}
+
+variable "client_objectid" {
+  type    = string
+  default = "<object_id>"
+}
+
+variable "key_vault_ipaddress"{
+  type    = list(string)
+  default = ["<ipaddress>/32"]
 }

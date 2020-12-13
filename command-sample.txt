@@ -1,12 +1,16 @@
 以下、AzureStudy 第6回で使うコマンド一覧です。
 
-[任意のアルファベット]
-<こちらへ貼り付けてください>
+[<prefix>を決める>]
+自分の名前を小文字アルファベットを入力
 
 [コマンドプロンプトを立ち上げる]
 cd Downloads
-mkdir terraformsyna
+mkdir terraformsynaSS
 cd terraformsyna
+
+[自身のオブジェクトIDを取得]
+
+
 
 
 [Terraformで環境構築 (Terraform ファイルをダウンロード)]
@@ -22,6 +26,12 @@ mkdir -p terraform/synapse-dbricks
 cd terraform/synapse-dbricks
 cp ~/*.tf .
 ls
+
+[variable.tf の修正 (2)]
+https://www.cman.jp/network/support/go_access.cgi
+
+[variable.tf の修正 (3)]
+https://www.graviness.com/app/pwg/
 
 [Terraform 初期化]
 terraform init
