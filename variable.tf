@@ -113,6 +113,11 @@ variable "key_vaultname" {
   default = "<prefix>keyvault"
 }
 
+variable "key_vault_retention" {
+  type    = string
+  default = "7"
+}
+
 variable "client_objectid" {
   type    = string
   default = "<object_id>"
