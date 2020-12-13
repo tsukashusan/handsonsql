@@ -81,21 +81,6 @@ resource "azurerm_databricks_workspace" "example" {
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
   sku                 = "trial"
-  provisioner "local-exec" {
-    working_dir = "./"
-    command      = <<-EOT
-     az keyvault create --default-action Deny --bypass AzureServices --location $LOCATION --name $KEY_VAULT_NAME --resource-group $RESOURCE_GROUP_NAME --network-acls-ips $IPADDRESS --retention-days $RETENTION
-     az keyvault set-policy --object-id $OBJECT_ID --name $KEY_VAULT_NAME --certificate-permissions backup create delete deleteissuers get getissuers import list listissuers managecontacts manageissuers purge recover restore setissuers update --key-permissions create decrypt delete encrypt get import list purge recover restore sign unwrapKey update verify wrapKey --secret-permissions backup delete get list purge recover restore set --storage-permissions backup delete deletesas get getsas list listsas purge recover regeneratekey restore set setsas update
-    EOT
-    environment = {
-      LOCATION = azurerm_resource_group.example.location
-      KEY_VAULT_NAME = var.key_vaultname
-      IPADDRESS = var.key_vault_ipaddres
-      RESOURCE_GROUP_NAME = azurerm_resource_group.example.name
-      OBJECT_ID = var.client_objectid
-      RETENTION = var.key_vault_retention
-    }
-  }
   tags = {
       environment = "Bastion & Terraform Demo"
       learning = "AzureStudy"
