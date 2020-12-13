@@ -67,13 +67,13 @@ resource "azurerm_sql_database" "example" {
       environment = "Bastion & Terraform Demo"
       learning = "AzureStudy"
   }
-  provisioner "local-exec" {
-    working_dir = "./"
-    command     = "az sql dw pause --ids $ID"
-    environment = {
-      ID = azurerm_sql_database.example.id
-    }
-  }
+  # provisioner "local-exec" {
+  #   working_dir = "./"
+  #   command     = "az sql dw pause --ids $ID"
+  #   environment = {
+  #     ID = azurerm_sql_database.example.id
+  #   }
+  # }
 }
 
 resource "azurerm_databricks_workspace" "example" {
