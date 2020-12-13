@@ -1,4 +1,4 @@
-resource "keyvault_azcli_resource" "example" {
+resource "null_resource" "example" {
   provisioner "local-exec" {
     working_dir = "./"
     command      = <<-EOT
