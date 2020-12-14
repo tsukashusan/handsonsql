@@ -1,7 +1,7 @@
-以下、AzureStudy 第6回で使うコマンド一覧です。
+以下、AzureStudy で使うコマンドです。
 
 [<prefix>を決める>]
-自分の名前を小文字アルファベットを入力
+<自分の名前を小文字アルファベットを入力>
 
 [コマンドプロンプトを立ち上げる]
 cd Downloads
@@ -9,17 +9,18 @@ mkdir terraformsynaSS
 cd terraformsyna
 
 [自身のオブジェクトIDを取得]
-
-
-
+<object_id>
 
 [Terraformで環境構築 (Terraform ファイルをダウンロード)]
-curl -k -o bastion-net.tf "https://miscstrage.blob.core.windows.net/hands-on/bastion-net.tf?sv=2019-12-12&st=2020-11-23T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=3xApk5BHt3a2d76uRH29mtEFNPQohn0y0%2FLEUwIGcz8%3D"
+curl -k -o bastion-net.tf "https://miscstrage.blob.core.windows.net/hands-on/bastion-net.tf?sv=2019-12-12&st=2020-12-13T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=ZL8eQieuEAUjP1Fct8et21tGqTsHdLXw41UorUXoUQk%3D"
 
-curl -k -o synapse-db.tf "https://miscstrage.blob.core.windows.net/hands-on/synapse-db.tf?sv=2019-12-12&st=2020-11-23T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=CBL36jbrAWILydKTBORHKBCwF9kkt2mFzhs0D5h0D%2FE%3D"
+curl -k -o synapse-db.tf "https://miscstrage.blob.core.windows.net/hands-on/synapse-db.tf?sv=2019-12-12&st=2020-12-13T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=MnyacJwY9M5SjDqg3cFd9goGdNIHb0FUnd7uXdt5sik%3D"
 
-curl -k -o variable.tf "https://miscstrage.blob.core.windows.net/hands-on/variable.tf?sv=2019-12-12&st=2020-11-23T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=66XiIxK7tpsBlm4YtuyT2rWTnJSeyERjUV3mQAAQA1U%3D"
+curl -k -o variable.tf "https://miscstrage.blob.core.windows.net/hands-on/variable.tf?sv=2019-12-12&st=2020-12-13T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=KdrusK21Fsr9IVuMG088%2Fo3PrUTxWwS4lzAjqPDTir0%3D"
 
+curl -k -o resource-group.tf "https://miscstrage.blob.core.windows.net/hands-on/resource-group.tf?sv=2019-12-12&st=2020-12-13T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=fc8kM65O2ZDhDLLugvB3A4ysSkxXEdrhHTAtB6tqf1w%3D"
+
+curl -k -o keyvault.tf "https://miscstrage.blob.core.windows.net/hands-on/keyvault.tf?sv=2019-12-12&st=2020-12-13T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=K9osnJn6ik0bVVePGUcmr8YqIpQzDyUYNO2seFJ7fUE%3D"
 
 [アップロードしたファイルの移動]
 mkdir -p terraform/synapse-dbricks
@@ -45,6 +46,26 @@ terraform plan -out vm-synapsecreate.tfplan
 [Terraform apply]
 terraform apply "vm-synapsecreate.tfplan"
 
+[Storage Access Key を Key Vault へ格納]
+名前: keyvaultsecret
+
+
+[Databricks CLI の準備]
+virtualenv -p /usr/bin/python databrickscli
+source databrickscli/bin/activate
+pip install databricks-cli
+databricks configure --token
+
+インタラクティブになった場合以下の値を張り付け
+https://japaneast.azuredatabricks.net/
+
+Databricks　Access Token
+<databricks token>
+
+[Databricksのシークレットスコープを作成 (1)]
+https://adb-7545185073451127.7.azuredatabricks.net#secrets/createScope
+
+
 [サンプルファイルのダウンロード]
 cd Downloads
 curl -k -o orc.zip "https://miscstrage.blob.core.windows.net/box/orc.zip?sv=2019-12-12&st=2020-11-23T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=8Ihe98QZr5OxwWBRVUL%2BKR13i9A%2FxsoinACgeic8AYE%3D"
@@ -59,7 +80,9 @@ curl -k -o sample.sql "https://miscstrage.blob.core.windows.net/box/sample.sql?s
 
 curl -k -o ctas.sql "https://miscstrage.blob.core.windows.net/box/ctas.sql?sv=2019-12-12&st=2020-11-24T15%3A00%3A00Z&se=2021-06-30T14%3A59%3A00Z&sr=b&sp=r&sig=vbHQDLxFZNCQf%2BIOcgT6XFg5ROP1n6xa76xEAZiStjc%3D"
 
+[Databricksのシークレットスコープを作成]
+databricks secrets create-scope --scope "scopesample" --scope-backend-type AZURE_KEYVAULT --resource-id "<リソースID>" --dns-name "<コンテナーのURL>"
+
 ①<storage account name> 
 
-②<output container>
 

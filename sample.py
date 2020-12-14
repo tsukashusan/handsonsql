@@ -6,23 +6,23 @@
 
 spark.conf.set(
   "fs.azure.account.key.<storage account name>.dfs.core.windows.net",
-  dbutils.secrets.get(scope="<databricks scope name>",key="<key vault key name>"))
+  dbutils.secrets.get(scope="scopesample",key="keyvaultsecret"))
 
 # COMMAND ----------
 
-dbutils.fs.ls("abfss://<container name>@<storage account name>.dfs.core.windows.net/sample")
+dbutils.fs.ls("abfss://storage@<storage account name>.dfs.core.windows.net/sample")
 
 # COMMAND ----------
 
-shiresaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/仕入先/")
-zyuchu = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/受注/")
-zyuchumeisai = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/受注明細/")
-shohin = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/商品/")
-shohinkubun = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/商品区分/")
-tokuisaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/得意先/")
-shain = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/社員/")
-unso = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/運送会社/")
-todofuken = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://<container name>@<storage account name>.dfs.core.windows.net/<folder path>/都道府県/")
+shiresaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/仕入先/")
+zyuchu = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/受注/")
+zyuchumeisai = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/受注明細/")
+shohin = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/商品/")
+shohinkubun = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/商品区分/")
+tokuisaki = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/得意先/")
+shain = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/社員/")
+unso = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/運送会社/")
+todofuken = spark.read.format("csv").option("header", "false").option("mode", "DROPMALFORMED").load("abfss://storage@<storage account name>.dfs.core.windows.net/sample/都道府県/")
 
 # COMMAND ----------
 
@@ -140,12 +140,12 @@ display(todofuken)
 
 # COMMAND ----------
 
-#shiresaki.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/shiiresaki/")
-#zyuchu.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/zyuchu/")
-#zyuchumeisai.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/zyuchumeisai/")
-#shohin.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/shohin/")
-#shohinkubun.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/shohinkubun/")
-#tokuisaki.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/tokuisaki/")
-#shain.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/shain/")
-#unso.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/unso/")
-#todofuken.write.mode('overwrite').orc("abfss://<output container>@<storage account name>.dfs.core.windows.net/todofuken/")
+#shiresaki.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/shiiresaki/")
+#zyuchu.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/zyuchu/")
+#zyuchumeisai.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/zyuchumeisai/")
+#shohin.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/shohin/")
+#shohinkubun.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/shohinkubun/")
+#tokuisaki.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/tokuisaki/")
+#shain.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/shain/")
+#unso.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/unso/")
+#todofuken.write.mode('overwrite').orc("abfss://synapse@<storage account name>.dfs.core.windows.net/todofuken/")
